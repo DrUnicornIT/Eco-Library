@@ -6,19 +6,19 @@ import { useEffect } from 'react'
 
 const TEXTS = [
   {
-    text: 'amazing',
+    text: 'CLB Sinh viên Nghiên cứu',
     className: 'bg-clip-text text-transparent bg-gradient-to-r from-[#ff1835] to-[#ffc900]'
   },
   {
-    text: 'stunning',
+    text: 'CLB Sinh viên Nghiên cứu',
     className: 'bg-clip-text text-transparent bg-gradient-to-r from-[#0077ff] to-[#00e7df]'
   },
   {
-    text: 'fantastic',
+    text: 'CLB Sinh viên Nghiên cứu',
     className: 'bg-clip-text text-transparent bg-gradient-to-r from-[#7f00de] to-[#ff007f]'
   },
   {
-    text: 'amazing',
+    text: 'CLB Sinh viên Nghiên cứu',
     className: 'bg-clip-text text-transparent bg-gradient-to-r from-[#ff1835] to-[#ffc900]'
   }
 ]
@@ -58,7 +58,7 @@ const Hero = () => {
           }}
         >
           <h1 className='font-title bg-gradient-to-b from-black via-black/90 to-black/70 to-90% bg-clip-text text-2xl font-bold leading-9 text-transparent sm:text-4xl sm:leading-[3.5rem] dark:from-white dark:via-white/90 dark:to-white/70'>
-            I'm Hong, a Full Stack Developer creating{' '}
+            Economia - ECO{' '}
             <div className='inline-grid h-9 overflow-hidden sm:h-14'>
               <div ref={scope}>
                 {TEXTS.map(({ text, className }, i) => (
@@ -69,27 +69,28 @@ const Hero = () => {
                 ))}
               </div>
             </div>{' '}
-            websites using React.
+            <br></br>
+            Kinh tế Học viện Ngoại giao.
           </h1>
-          <div className='text-muted-foreground text-sm'>Hong Kong • UTC/GMT +8</div>
+          <div className='text-muted-foreground text-sm'>HaNoi/VietNam • UTC/GMT +7</div>
         </motion.div>
         <motion.div
           className='relative size-20 md:size-28'
           initial={{
-            scale: 0
-          }}
-          animate={{
             scale: 1
           }}
+          animate={{
+            scale: 3.5
+          }}
           transition={{
-            duration: 0.3
+            duration: 0.2
           }}
         >
           <BlurImage
             src='/images/avatar.png'
             className='rounded-full'
-            width={112}
-            height={112}
+            width={400}
+            height={400}
             alt='Hong'
             lazy={false}
           />

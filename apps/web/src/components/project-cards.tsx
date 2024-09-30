@@ -1,11 +1,11 @@
 'use client'
 
 import { BlurImage, Link } from '@tszhong0411/ui'
-import type { Project } from 'mdx/generated'
+import type { New } from 'mdx/generated'
 
-type ProjectCardProps = Project
+type ProjectCardProps = New
 type ProjectCardsProps = {
-  projects: Project[]
+  projects: New[]
 }
 
 const ProjectCards = (props: ProjectCardsProps) => {
@@ -25,11 +25,11 @@ const ProjectCard = (props: ProjectCardProps) => {
 
   return (
     <Link
-      href={`/projects/${slug}`}
+      href={`/new/${slug}`}
       className='shadow-feature-card dark:shadow-feature-card-dark group rounded-xl px-2 py-4'
     >
       <BlurImage
-        src={`/images/projects/${slug}/cover.png`}
+        src={`/images/new/${slug}/cover.png`}
         width={1280}
         height={832}
         imageClassName='group-hover:scale-105'

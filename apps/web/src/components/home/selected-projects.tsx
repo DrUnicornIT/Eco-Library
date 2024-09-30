@@ -4,7 +4,7 @@ import { BlurImage, buttonVariants, Link } from '@tszhong0411/ui'
 import { cn } from '@tszhong0411/utils'
 import { motion, useInView } from 'framer-motion'
 import { ArrowUpRightIcon, LightbulbIcon } from 'lucide-react'
-import type { Project } from 'mdx/generated'
+import type { New } from 'mdx/generated'
 import { useRef } from 'react'
 
 const variants = {
@@ -19,11 +19,11 @@ const variants = {
 }
 
 type ProjectsProps = {
-  projects: Project[]
+  projects: New[]
 }
 
 type CardProps = {
-  project: Project
+  project: New
 }
 
 const SelectedProjects = (props: ProjectsProps) => {
@@ -56,7 +56,7 @@ const SelectedProjects = (props: ProjectsProps) => {
           duration: 0.3
         }}
       >
-        Selected Projects
+        Các Tin Tức Đáng Chú Ý
       </motion.h2>
       <motion.div
         className='mt-12 grid gap-4 md:grid-cols-2'
@@ -80,7 +80,7 @@ const SelectedProjects = (props: ProjectsProps) => {
       </motion.div>
       <div className='my-8 flex items-center justify-center'>
         <Link
-          href='/projects'
+          href='/new'
           className={cn(
             buttonVariants({
               variant: 'outline'
@@ -88,7 +88,7 @@ const SelectedProjects = (props: ProjectsProps) => {
             'rounded-xl'
           )}
         >
-          See all project
+          See all
         </Link>
       </div>
     </motion.div>
@@ -102,20 +102,20 @@ const Card = (props: CardProps) => {
   return (
     <Link
       key={slug}
-      href={`/projects/${slug}`}
+      href={`/new/${slug}`}
       className='shadow-feature-card dark:shadow-feature-card-dark group relative rounded-xl p-2'
     >
       <div className='flex items-center justify-between p-4'>
         <div className='flex items-center gap-3'>
           <LightbulbIcon className='size-[18px]' />
-          <h2 className='font-light'>Project</h2>
+          <h2 className='font-light'>New</h2>
         </div>
         <ArrowUpRightIcon className='size-[18px] opacity-0 transition-opacity group-hover:opacity-100' />
       </div>
       <BlurImage
         width={1280}
         height={832}
-        src={`/images/projects/${slug}/cover.png`}
+        src={`/images/new/${slug}/cover.png`}
         alt={description}
         className='rounded-lg'
       />

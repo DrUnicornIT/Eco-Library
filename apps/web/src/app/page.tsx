@@ -1,11 +1,14 @@
-import { allBlogPosts, allProjects } from 'mdx/generated'
+import { allBlogProjs, allBlogResearches, allNews } from 'mdx/generated'
 import type { Metadata } from 'next'
 
 import AboutMe from '@/components/home/about-me'
 import GetInTouch from '@/components/home/get-in-touch'
 import Hero from '@/components/home/hero'
 import LatestArticles from '@/components/home/latest-articles'
+import LatestArticlesProject from '@/components/home/latest-articles-project'
 import SelectedProjects from '@/components/home/selected-projects'
+
+
 import { SITE_URL } from '@/lib/constants'
 
 export const metadata: Metadata = {
@@ -15,21 +18,30 @@ export const metadata: Metadata = {
 }
 
 const HomePage = () => {
-  const posts = allBlogPosts
+  const posts = allBlogProjs
   const latestPosts = posts
     .sort((a, b) => {
       return new Date(b.date).getTime() - new Date(a.date).getTime()
     })
     .slice(0, 2)
 
-  const projects = allProjects
+
+  const research_posts = allBlogResearches
+  const latest_research_Posts = research_posts
+    .sort((a, b) => {
+      return new Date(b.date).getTime() - new Date(a.date).getTime()
+    })
+    .slice(0, 2)
+
+  const news = allNews
 
   return (
     <>
       <Hero />
-      <SelectedProjects projects={projects} />
-      <AboutMe />
       <LatestArticles posts={latestPosts} />
+      <LatestArticlesProject posts={latest_research_Posts} />
+      <SelectedProjects projects={news} />
+      <AboutMe />
       <GetInTouch />
     </>
   )

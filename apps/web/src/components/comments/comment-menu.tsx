@@ -45,7 +45,6 @@ const CommentMenu = () => {
   } = comment
 
   const commentIdentifier = parentId ? `comment-${parentId}-${id}` : `comment-${id}`
-
   return (
     <AlertDialog>
       <DropdownMenu>

@@ -184,7 +184,7 @@ CommentNotification.PreviewProps = {
   commentIdentifier: 'comment-1',
   post: {
     title: 'Hello World',
-    url: 'http://localhost:3000/blog/hello-world'
+    url: 'http://localhost:3000/topic/hello-world'
   },
   type: 'comment'
 } satisfies CommentNotificationProps

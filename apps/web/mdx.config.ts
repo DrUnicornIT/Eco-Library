@@ -1,8 +1,8 @@
 import { type DocumentType, type MakeSourceOptions } from '@tszhong0411/mdx'
 
-const BlogPost = {
-  name: 'BlogPost',
-  filePathPattern: 'blog/*.mdx',
+const BlogResearch = {
+  name: 'BlogResearch',
+  filePathPattern: 'research/*.mdx',
   fields: [
     {
       name: 'title',
@@ -27,9 +27,63 @@ const BlogPost = {
   ]
 } satisfies DocumentType
 
-const Project = {
-  name: 'Project',
-  filePathPattern: 'projects/*.mdx',
+const BlogProj = {
+  name: 'BlogProj',
+  filePathPattern: 'project/*.mdx',
+  fields: [
+    {
+      name: 'title',
+      type: 'string',
+      required: true
+    },
+    {
+      name: 'date',
+      type: 'string',
+      required: true
+    },
+    {
+      name: 'modifiedTime',
+      type: 'string',
+      required: true
+    },
+    {
+      name: 'summary',
+      type: 'string',
+      required: true
+    }
+  ]
+} satisfies DocumentType
+
+const BlogReport = {
+  name: 'BlogReport',
+  filePathPattern: 'report/*.mdx',
+  fields: [
+    {
+      name: 'title',
+      type: 'string',
+      required: true
+    },
+    {
+      name: 'date',
+      type: 'string',
+      required: true
+    },
+    {
+      name: 'modifiedTime',
+      type: 'string',
+      required: true
+    },
+    {
+      name: 'summary',
+      type: 'string',
+      required: true
+    }
+  ]
+} satisfies DocumentType
+
+const New = {
+  name: 'New',
+  filePathPattern: 'new/*.mdx',
   fields: [
     {
       name: 'name',
@@ -77,5 +131,5 @@ const Page = {
 
 export default {
   contentDirPath: 'src/content',
-  defs: [BlogPost, Project, Page]
+  defs: [BlogResearch, BlogProj, BlogReport, New, Page]
 } satisfies MakeSourceOptions

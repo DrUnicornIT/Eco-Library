@@ -1,6 +1,5 @@
 'use client'
-
-import { Link, Logo, Separator } from '@tszhong0411/ui'
+import { BlurImage, Link, Separator } from '@tszhong0411/ui'
 import { cn } from '@tszhong0411/utils'
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
@@ -54,7 +53,13 @@ const Header = () => {
       </a>
       <Link href='/' className='flex items-center justify-center gap-1'>
         <span className='sr-only'>Homepage</span>
-        <Logo width={28} height={28} aria-hidden='true' />
+        <BlurImage
+          src='/images/avatar.png'
+          className='rounded-full'
+          width={64}
+          height={64}
+          alt='Hong'
+        />
       </Link>
       <div className='flex items-center gap-2'>
         <Navbar />

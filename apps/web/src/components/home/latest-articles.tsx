@@ -4,7 +4,7 @@ import { BlurImage, buttonVariants, Link } from '@tszhong0411/ui'
 import { cn } from '@tszhong0411/utils'
 import { motion, useInView } from 'framer-motion'
 import { ArrowUpRightIcon, PencilIcon } from 'lucide-react'
-import type { BlogPost } from 'mdx/generated'
+import type { BlogResearch } from 'mdx/generated'
 import { useRef } from 'react'
 
 import { useFormattedDate } from '@/hooks/use-formatted-date'
@@ -22,7 +22,7 @@ const variants = {
 }
 
 type LatestArticlesProps = {
-  posts: BlogPost[]
+  posts: BlogResearch[]
 }
 
 const LatestArticles = (props: LatestArticlesProps) => {
@@ -55,7 +55,7 @@ const LatestArticles = (props: LatestArticlesProps) => {
           duration: 0.3
         }}
       >
-        Latest Articles
+        Các Đề Tài Nghiên Cứu Nổi Bật
       </motion.h2>
       <motion.div
         className='mt-12 grid gap-4 md:grid-cols-2'
@@ -77,7 +77,7 @@ const LatestArticles = (props: LatestArticlesProps) => {
       </motion.div>
       <div className='my-8 flex items-center justify-center'>
         <Link
-          href='/blog'
+          href='/research'
           className={cn(
             buttonVariants({
               variant: 'outline'
@@ -85,7 +85,7 @@ const LatestArticles = (props: LatestArticlesProps) => {
             'rounded-xl'
           )}
         >
-          See all articles
+          See all
         </Link>
       </div>
     </motion.div>
@@ -93,7 +93,7 @@ const LatestArticles = (props: LatestArticlesProps) => {
 }
 
 type CardProps = {
-  post: BlogPost
+  post: BlogResearch
 }
 
 const Card = (props: CardProps) => {
@@ -114,20 +114,20 @@ const Card = (props: CardProps) => {
 
   return (
     <Link
-      href={`/blog/${slug}`}
+      href={`/research/${slug}`}
       className='shadow-feature-card dark:shadow-feature-card-dark group relative rounded-xl p-2'
     >
       <div className='flex items-center justify-between p-4'>
         <div className='flex items-center gap-3'>
           <PencilIcon className='size-[18px]' />
-          <h2 className='font-light'>Blog</h2>
+          <h2 className='font-light'>Research</h2>
         </div>
         <ArrowUpRightIcon className='size-[18px] opacity-0 transition-opacity group-hover:opacity-100' />
       </div>
       <BlurImage
         width={1200}
         height={630}
-        src={`/images/blog/${slug}/cover.png`}
+        src={`/images/research/${slug}/cover.png`}
         alt={title}
         className='rounded-lg'
       />

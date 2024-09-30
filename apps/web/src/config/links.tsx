@@ -6,14 +6,7 @@ import {
   SiX,
   SiYoutube
 } from '@icons-pack/react-simple-icons'
-import {
-  BarChartIcon,
-  FlameIcon,
-  MessageCircleIcon,
-  MonitorIcon,
-  PencilIcon,
-  UserCircleIcon
-} from 'lucide-react'
+import { MessageCircleIcon, MonitorIcon, PencilIcon, UserCircleIcon } from 'lucide-react'
 
 type HeaderLinks = Array<{
   icon: React.ReactNode
@@ -38,24 +31,25 @@ type SocialLinks = Array<{
 export const HEADER_LINKS: HeaderLinks = [
   {
     icon: <PencilIcon className='size-3.5' />,
-    href: '/blog',
-    text: 'Blog'
+    href: '/research',
+    text: 'Research'
+  },
+  {
+    icon: <PencilIcon className='size-3.5' />,
+    href: '/project',
+    text: 'Project'
+  },
+  {
+    icon: <PencilIcon className='size-3.5' />,
+    href: '/report',
+    text: 'Economic Report'
   },
   {
     icon: <MessageCircleIcon className='size-3.5' />,
-    href: '/guestbook',
-    text: 'Guestbook'
+    href: '/new',
+    text: 'New'
   },
-  {
-    icon: <BarChartIcon className='size-3.5' />,
-    href: '/dashboard',
-    text: 'Dashboard'
-  },
-  {
-    icon: <FlameIcon className='size-3.5' />,
-    href: '/projects',
-    text: 'Projects'
-  },
+
   {
     icon: <UserCircleIcon className='size-3.5' />,
     href: '/about',
@@ -63,8 +57,8 @@ export const HEADER_LINKS: HeaderLinks = [
   },
   {
     icon: <MonitorIcon className='size-3.5' />,
-    href: '/uses',
-    text: 'Uses'
+    href: '/album',
+    text: 'Album'
   }
 ]
 
@@ -77,8 +71,8 @@ export const FOOTER_LINKS: FooterLinks = [
         text: 'Home'
       },
       {
-        href: '/blog',
-        text: 'Blog'
+        href: '/topic',
+        text: 'topic'
       },
       {
         href: '/about',

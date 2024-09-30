@@ -6,7 +6,7 @@ import Mdx from '@/components/mdx'
 import PageTitle from '@/components/page-title'
 
 const title = 'About'
-const description = 'A student who loves web development.'
+const description = 'About ME.'
 
 type AboutPageProps = {
   params: Record<string, never>
@@ -52,7 +52,7 @@ const AboutPage = () => {
 
   return (
     <>
-      <PageTitle title='About' description='👋 Hi there! I am Hong.' />
+      <PageTitle title='Về chúng mình' description='👋 ECO hi there.' />
       <Mdx content={body} />
     </>
   )

@@ -1,7 +1,7 @@
 import { flags } from '@tszhong0411/env'
 import { cn } from '@tszhong0411/utils'
-import { GeistMono } from 'geist/font/mono'
-import { GeistSans } from 'geist/font/sans'
+// import { GeistMono } from 'geist/font/mono'
+// import { GeistSans } from 'geist/font/sans'
 import type { Metadata, Viewport } from 'next'
 import localFont from 'next/font/local'
 import Image from 'next/image'
@@ -107,9 +107,17 @@ export const viewport: Viewport = {
     color: '#000000'
   }
 }
+const geistSans = localFont({
+  src: '../../public/fonts/Gelasio-Regular.ttf',
+  variable: '--font-geist-sans'
+})
+const geistMono = localFont({
+  src: '../../public/fonts/IBMPlexSerif-Regular.ttf',
+  variable: '--font-geist-mono'
+})
 
 const calcom = localFont({
-  src: '../../public/fonts/CalSans-SemiBold.woff2',
+  src: '../../public/fonts/NotoSans-Bold.ttf',
   variable: '--font-title'
 })
 
@@ -118,8 +126,9 @@ const RootLayout = (props: RootLayoutProps) => {
 
   return (
     <html
-      lang='en-US'
-      className={cn(GeistSans.variable, GeistMono.variable, calcom.variable, 'scroll-smooth')}
+      lang='vi-VN'
+
+      className={cn(geistSans.variable, geistMono.variable, calcom.variable, 'scroll-smooth')}
       suppressHydrationWarning
     >
       <body>

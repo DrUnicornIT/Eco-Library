@@ -21,7 +21,7 @@ export const GET = () => {
 
     feed.item({
       title,
-      url: `${SITE_URL}/blog/${slug}`,
+      url: `${SITE_URL}/project/${slug}`,
       date,
       description: summary,
       author: SITE_NAME
