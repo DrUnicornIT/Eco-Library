@@ -5,9 +5,8 @@ import { notFound } from 'next/navigation'
 import Mdx from '@/components/mdx'
 import PageTitle from '@/components/page-title'
 
-const title = 'Uses'
-const description =
-  'This is the equipment I currently use for gaming, programming, making videos, and every day.'
+const title = 'Album'
+const description = 'Album'
 
 type UsesPageProps = {
   params: Record<string, never>
@@ -25,11 +24,11 @@ export const generateMetadata = async (
     title,
     description,
     alternates: {
-      canonical: '/uses'
+      canonical: '/album'
     },
     openGraph: {
       ...previousOpenGraph,
-      url: '/uses',
+      url: '/album',
       title,
       description
     },
@@ -53,9 +52,8 @@ const UsesPage = () => {
   return (
     <>
       <PageTitle
-        title='Uses'
-        description='This is the equipment I currently use for gaming, programming, making
-        videos, and every day.'
+        title='Album'
+        description='Album.'
       />
       <Mdx content={body} />
     </>

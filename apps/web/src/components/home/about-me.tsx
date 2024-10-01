@@ -51,7 +51,7 @@ const AboutMe = () => {
           duration: 0.3
         }}
       >
-        About Me
+        Về chúng tôi
       </motion.h2>
       <motion.div
         className='mt-12 grid gap-4 md:grid-cols-2'

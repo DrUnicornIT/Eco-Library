@@ -1,10 +1,8 @@
 import {
   type IconType,
   SiFacebook,
-  SiGithub,
-  SiInstagram,
-  SiX,
-  SiYoutube
+  SiGooglehome,
+  SiGmail,
 } from '@icons-pack/react-simple-icons'
 import { MessageCircleIcon, MonitorIcon, PencilIcon, UserCircleIcon } from 'lucide-react'
 
@@ -71,16 +69,16 @@ export const FOOTER_LINKS: FooterLinks = [
         text: 'Home'
       },
       {
-        href: '/topic',
-        text: 'topic'
+        href: '/research',
+        text: 'Research'
       },
       {
-        href: '/about',
-        text: 'About'
+        href: '/project',
+        text: 'Project'
       },
       {
-        href: '/dashboard',
-        text: 'Dashboard'
+        href: '/report',
+        text: 'Economic Report'
       }
     ]
   },
@@ -88,20 +86,16 @@ export const FOOTER_LINKS: FooterLinks = [
     id: 2,
     links: [
       {
-        href: '/guestbook',
-        text: 'Guestbook'
+        href: '/new',
+        text: 'New'
       },
       {
-        href: '/uses',
-        text: 'Uses'
+        href: '/about',
+        text: 'About'
       },
       {
-        href: '/projects',
-        text: 'Projects'
-      },
-      {
-        href: 'https://links.honghong.me',
-        text: 'Links'
+        href: '/album',
+        text: 'Album'
       }
     ]
   },
@@ -109,20 +103,16 @@ export const FOOTER_LINKS: FooterLinks = [
     id: 3,
     links: [
       {
-        href: 'https://www.facebook.com/tszhong0411/',
+        href: 'https://www.facebook.com/economiadav',
         text: 'Facebook'
       },
       {
-        href: 'https://www.instagram.com/tszhong0411/',
-        text: 'Instagram'
+        href: 'mailto:economia.dav@gmail.com',
+        text: 'Gmail'
       },
       {
-        href: 'https://github.com/tszhong0411',
-        text: 'GitHub'
-      },
-      {
-        href: 'https://www.youtube.com/@tszhong0411',
-        text: 'YouTube'
+        href: '0988358369',
+        text: 'Phone'
       }
     ]
   }
@@ -130,28 +120,28 @@ export const FOOTER_LINKS: FooterLinks = [
 
 export const SOCIAL_LINKS: SocialLinks = [
   {
-    href: 'https://github.com/tszhong0411',
-    title: 'GitHub',
-    icon: SiGithub
-  },
-  {
-    href: 'https://www.facebook.com/tszhong0411/',
+    href: 'https://www.facebook.com/economiadav',
     title: 'Facebook',
     icon: SiFacebook
   },
   {
-    href: 'https://www.instagram.com/tszhong0411/',
-    title: 'Instagram',
-    icon: SiInstagram
+    href: 'mailto:economia.dav@gmail.com',
+    title: 'Gmail',
+    icon: SiGmail
   },
   {
-    href: 'https://x.com/tszhong0411',
-    title: 'X',
-    icon: SiX
+    href: '0988358369',
+    title: 'Phone - Chủ Nhiệm Thùy Dương',
+    icon: SiGooglehome
   },
   {
-    href: 'https://www.youtube.com/@tszhong0411',
-    title: 'YouTube',
-    icon: SiYoutube
+    href: '0964060215',
+    title: 'Phone - Cố Vấn Ngọc Thơ',
+    icon: SiGooglehome
+  },
+  {
+    href: '0829520797',
+    title: 'Phone - Cố Vấn Xuân Nhung',
+    icon: SiGooglehome
   }
 ]

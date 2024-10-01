@@ -51,13 +51,13 @@ const Header = (props: HeaderProps) => {
         <div className='grid grid-cols-2 text-sm max-md:gap-4 md:grid-cols-4'>
           <div className='space-y-1 md:mx-auto'>
             <div className='text-muted-foreground'>Written by</div>
-            <Link href='https://github.com/tszhong0411' className='flex items-center gap-2'>
+            <Link href='https://www.facebook.com/economiadav' className='flex items-center gap-2'>
               <BlurImage
                 src='/images/avatar.png'
                 className='rounded-full'
-                width={32}
-                height={32}
-                alt='Hong'
+                width={40}
+                height={40}
+                alt='ECO'
               />
               ECO
             </Link>

@@ -1,26 +1,37 @@
 'use client'
 
+// checkmarx
+// osgeo
+// meteor
+// monero
+// chessdotcom
+// protocolsdotio
+// hoppscotch
+// libreofficecalc
+// buymeacoffee
+
+
 import {
-  SiCloudflare,
-  SiCss3,
+  SiDeno,
+  SiBitcoin,
   SiFigma,
-  SiFirebase,
-  SiGit,
-  SiHtml5,
-  SiJavascript,
-  SiJest,
+  SiCheckmarx,
+  SiOsgeo,
+  SiMeteor,
+  SiChessdotcom,
+  SiProtocolsdotio,
   SiMarkdown,
-  SiMysql,
-  SiNextdotjs,
-  SiNodedotjs,
-  SiPostgresql,
-  SiPrisma,
-  SiPython,
-  SiReact,
-  SiTailwindcss,
-  SiTypescript,
-  SiVisualstudiocode,
-  SiVite
+  SiHoppscotch,
+  SiLibreofficecalc,
+  SiBuymeacoffee,
+  SiAbbott,
+  SiAdidas,
+  SiNike,
+  SiUniqlo,
+  SiUnilever,
+  SiGooglegemini,
+  SiOpenai,
+  SiApple
 } from '@icons-pack/react-simple-icons'
 import { Marquee } from '@tszhong0411/ui'
 import { ZapIcon } from 'lucide-react'
@@ -33,28 +44,28 @@ const StacksCard = () => {
         <h2 className='text-sm font-light'>Stacks</h2>
       </div>
       <Marquee gap='20px' className='py-4' fade pauseOnHover>
-        <SiHtml5 className='size-10' />
-        <SiCss3 className='size-10' />
-        <SiJavascript className='size-10' />
-        <SiTypescript className='size-10' />
+        <SiDeno className='size-10' />
+        <SiBitcoin className='size-10' />
+        <SiCheckmarx className='size-10' />
+        <SiAbbott className='size-10' />
         <SiFigma className='size-10' />
-        <SiTailwindcss className='size-10' />
-        <SiNextdotjs className='size-10' />
-        <SiReact className='size-10' />
-        <SiPython className='size-10' />
-        <SiPostgresql className='size-10' />
+        <SiAdidas className='size-10' />
+        <SiOsgeo className='size-10' />
+        <SiNike className='size-10' />
+        <SiUniqlo className='size-10' />
+        <SiUnilever className='size-10' />
       </Marquee>
       <Marquee gap='20px' className='py-4' reverse fade pauseOnHover>
-        <SiPrisma className='size-10' />
-        <SiMysql className='size-10' />
-        <SiFirebase className='size-10' />
-        <SiGit className='size-10' />
-        <SiVite className='size-10' />
-        <SiVisualstudiocode className='size-10' />
-        <SiCloudflare className='size-10' />
+        <SiGooglegemini className='size-10' />
+        <SiMeteor className='size-10' />
+        <SiProtocolsdotio className='size-10' />
+        <SiChessdotcom className='size-10' />
+        <SiOpenai className='size-10' />
+        <SiApple className='size-10' />
+        <SiHoppscotch className='size-10' />
         <SiMarkdown className='size-10' />
-        <SiJest className='size-10' />
-        <SiNodedotjs className='size-10' />
+        <SiLibreofficecalc className='size-10' />
+        <SiBuymeacoffee className='size-10' />
       </Marquee>
     </div>
   )

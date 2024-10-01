@@ -70,25 +70,25 @@ const GetInTouch = () => {
               id='next-js'
               className='absolute bottom-12 left-14 rounded-3xl border bg-gradient-to-b from-zinc-50 to-zinc-100 px-2 py-1.5 text-xs opacity-40 dark:from-zinc-800 dark:to-zinc-900'
             >
-              Next.js
+              Economic
             </div>
             <div
               id='react-js'
               className='absolute left-2 top-20 rounded-3xl border bg-gradient-to-b from-zinc-50 to-zinc-100 px-2 py-1.5 text-xs opacity-40 dark:from-zinc-800 dark:to-zinc-900'
             >
-              React.js
+              Technology
             </div>
             <div
               id='typescript'
               className='absolute bottom-20 right-1 rounded-3xl border bg-gradient-to-b from-zinc-50 to-zinc-100 px-2 py-1.5 text-xs opacity-40 dark:from-zinc-800 dark:to-zinc-900'
             >
-              TypeScript
+              Global
             </div>
             <div
               id='javascript'
               className='absolute right-8 top-10 rounded-3xl border bg-gradient-to-b from-zinc-50 to-zinc-100 px-2 py-1.5 text-xs opacity-40 dark:from-zinc-800 dark:to-zinc-900'
             >
-              JavaScript
+              Future
             </div>
 
             <div id='pointer' className='absolute'>
@@ -108,25 +108,21 @@ const GetInTouch = () => {
                 />
               </svg>
               <span className='relative left-4 rounded-3xl bg-red-500 px-2 py-0.5 text-xs text-white'>
-                Hong
+                ECO
               </span>
             </div>
           </div>
 
           <div className='flex flex-col justify-center px-4'>
             <p className='font-title mb-2 bg-gradient-to-r from-black to-black/70 bg-clip-text text-3xl font-bold text-transparent dark:from-zinc-100 dark:to-zinc-400'>
-              Any questions about Next.js?
-            </p>
-            <p className='text-zinc-800 dark:text-zinc-300'>
-              Feel free to reach out to me!{' '}
-              <span className='text-muted-foreground'>I'm unavailable for collaboration.</span>
+              Any questions about Our ECO?
             </p>
             <div className='my-8'>
               <a
-                href='mailto:me@honghong.me'
+                href='mailto:economia.dav@gmail.com'
                 className='bg-email-button rounded-full px-4 py-2 text-sm text-white'
               >
-                me@honghong.me
+                economia.dav@gmail.com
               </a>
             </div>
           </div>
