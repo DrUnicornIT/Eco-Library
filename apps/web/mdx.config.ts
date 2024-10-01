@@ -101,11 +101,6 @@ const New = {
       required: false
     },
     {
-      name: 'github',
-      type: 'string',
-      required: true
-    },
-    {
       name: 'techstack',
       type: 'list',
       fields: [

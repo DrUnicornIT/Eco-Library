@@ -6,8 +6,6 @@ import { motion } from 'framer-motion'
 import { ArrowUpRightIcon } from 'lucide-react'
 import type { New } from 'mdx/generated'
 
-import { GITHUB_USERNAME } from '@/lib/constants'
-
 const animation = {
   hide: {
     x: -30,
@@ -22,9 +20,7 @@ const animation = {
 type HeaderProps = New
 
 const Header = (props: HeaderProps) => {
-  const { name, description, homepage, github } = props
-
-  const repo = github.split('/').pop()
+  const { name, description, homepage} = props
 
   return (
     <div className='space-y-8 pt-10'>
@@ -50,10 +46,6 @@ const Header = (props: HeaderProps) => {
             <ArrowUpRightIcon className='ml-2 size-5 transition-transform group-hover:-rotate-12' />
           </Link>
         ) : null}
-        <Link href={github} className={cn(buttonVariants(), 'group')}>
-          {GITHUB_USERNAME}/{repo}
-          <ArrowUpRightIcon className='ml-2 size-5 transition-transform group-hover:-rotate-12' />
-        </Link>
       </motion.div>
     </div>
   )
