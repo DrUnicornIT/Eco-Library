@@ -1,6 +1,6 @@
 'use client'
 
-import { SiFacebook } from '@icons-pack/react-simple-icons'
+// import { SiFacebook } from '@icons-pack/react-simple-icons'
 import {
   Button,
   Dialog,
@@ -24,14 +24,6 @@ const SignInModal = () => {
           <DialogDescription className='text-left'>to continue to honghong.me</DialogDescription>
         </DialogHeader>
         <div className='my-6 flex flex-col gap-4'>
-          <Button
-            type='button'
-            className='h-10 rounded-xl font-bold'
-            onClick={() => void signIn('facebook')}
-          >
-            <SiFacebook className='mr-3' />
-            Continue with Facebook
-          </Button>
           <Button
             type='button'
             className='h-10 rounded-xl border font-bold'
