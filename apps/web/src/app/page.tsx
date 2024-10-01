@@ -7,7 +7,7 @@ import Hero from '@/components/home/hero'
 import LatestArticles from '@/components/home/latest-articles'
 import LatestArticlesProject from '@/components/home/latest-articles-project'
 import SelectedProjects from '@/components/home/selected-projects'
-
+import { Analytics } from "@vercel/analytics/react"
 
 import { SITE_URL } from '@/lib/constants'
 
@@ -43,6 +43,7 @@ const HomePage = () => {
       <SelectedProjects projects={news} />
       <AboutMe />
       <GetInTouch />
+      <Analytics/>
     </>
   )
 }
