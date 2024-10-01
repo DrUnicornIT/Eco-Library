@@ -38,8 +38,8 @@ const HomePage = () => {
   return (
     <>
       <Hero />
-      <LatestArticles posts={latestPosts} />
-      <LatestArticlesProject posts={latest_research_Posts} />
+      <LatestArticles posts={latest_research_Posts} />
+      <LatestArticlesProject posts={latestPosts} />
       <SelectedProjects projects={news} />
       <AboutMe />
       <GetInTouch />

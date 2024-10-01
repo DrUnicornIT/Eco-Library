@@ -1,6 +1,6 @@
 'use client'
 
-import { SiGithub } from '@icons-pack/react-simple-icons'
+import { SiFacebook } from '@icons-pack/react-simple-icons'
 import {
   Button,
   Dialog,
@@ -27,10 +27,10 @@ const SignInModal = () => {
           <Button
             type='button'
             className='h-10 rounded-xl font-bold'
-            onClick={() => void signIn('github')}
+            onClick={() => void signIn('facebook')}
           >
-            <SiGithub className='mr-3' />
-            Continue with GitHub
+            <SiFacebook className='mr-3' />
+            Continue with Facebook
           </Button>
           <Button
             type='button'
