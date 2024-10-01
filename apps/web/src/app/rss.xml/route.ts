@@ -1,4 +1,4 @@
-import { allBlogPosts } from 'mdx/generated'
+import { allBlogProjs } from 'mdx/generated'
 import { NextResponse } from 'next/server'
 import RSS from 'rss'
 
@@ -14,7 +14,7 @@ export const GET = () => {
     image_url: `${SITE_URL}/images/og.png`
   })
 
-  const posts = allBlogPosts
+  const posts = allBlogProjs
 
   for (const post of posts) {
     const { title, summary, date, slug } = post

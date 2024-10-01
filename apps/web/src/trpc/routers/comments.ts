@@ -11,7 +11,7 @@ import { TRPCError } from '@trpc/server'
 import { and, asc, comments, count, desc, eq, isNull, rates } from '@tszhong0411/db'
 import { CommentNotification } from '@tszhong0411/emails'
 import { env } from '@tszhong0411/env'
-import { allBlogPosts } from 'mdx/generated'
+import { allBlogResearches } from 'mdx/generated'
 import { Resend } from 'resend'
 import { z } from 'zod'
 
@@ -161,7 +161,7 @@ export const commentsRouter = createTRPCRouter({
           : {})
       })
 
-      const page = allBlogPosts.find((post) => post.slug === input.slug)
+      const page = allBlogResearches.find((post) => post.slug === input.slug)
 
       if (!page) return
 

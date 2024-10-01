@@ -17,7 +17,7 @@ const CodingHours = () => {
         <h2 className='text-sm font-light'>Coding hours</h2>
       </div>
       <div className='font-title flex grow items-center justify-center text-4xl font-semibold'>
-        {/* {wakatimeQuery.isLoading ? '--' : Math.round(wakatimeQuery.data!.seconds / 60 / 60)} hrs */}
+        {wakatimeQuery.isLoading ? '--' : Math.round(wakatimeQuery.data!.seconds / 60 / 60)} hrs
       </div>
     </div>
   )
