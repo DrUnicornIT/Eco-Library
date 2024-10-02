@@ -47,8 +47,8 @@ const BlogProj = () => {
   return (
     <>
       <PageTitle
-        title='Đề tài'
-        description={`Chìm vào dòng suy tư tại góc Đề Tài - nơi tập hợp những sản phẩm Nghiên cứu Khoa học có chiều sâu của các Economians.`}
+        title='Dự Án'
+        description={`Ngược dòng thời gian để xâu chuỗi những biến động kinh tế đáng chú ý với Dự án - nơi Economians đưa các bạn đi hết chặng đường có dấu chân của các điểm nóng kinh tế.`}
       />
       <FilteredProjs posts={posts} />
     </>

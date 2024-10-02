@@ -56,7 +56,7 @@ const SelectedProjects = (props: ProjectsProps) => {
           duration: 0.3
         }}
       >
-        Các Tin Tức Đáng Chú Ý
+        CÁC TIN TỨC ĐÁNG CHÚ Ý
       </motion.h2>
       <motion.div
         className='mt-12 grid gap-4 md:grid-cols-2'

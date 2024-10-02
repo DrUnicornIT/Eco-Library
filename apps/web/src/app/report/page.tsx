@@ -47,8 +47,8 @@ const ReportPage = () => {
   return (
     <>
       <PageTitle
-        title='Báo Cáo Tài Chính'
-        description={`Chìm vào dòng suy tư tại góc Chuyên Đề - nơi tập hợp những sản phẩm Nghiên cứu Khoa học có chiều sâu của các Economians.`}
+        title='Báo cáo Kinh tế'
+        description={`Hoà mình vào dòng chảy của nhịp sống kinh tế Việt Nam với Báo cáo Kinh tế Tháng - ấn phẩm tóm lược những sự kiện nổi bật của đất nước trong tháng vừa qua.`}
       />
       <FilteredReports posts={posts} />
     </>

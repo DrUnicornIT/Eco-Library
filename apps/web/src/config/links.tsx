@@ -30,28 +30,28 @@ export const HEADER_LINKS: HeaderLinks = [
   {
     icon: <PencilIcon className='size-3.5' />,
     href: '/research',
-    text: 'Research'
+    text: 'Chuyên Đề'
   },
   {
     icon: <PencilIcon className='size-3.5' />,
     href: '/project',
-    text: 'Project'
+    text: 'Dự Án'
   },
   {
     icon: <PencilIcon className='size-3.5' />,
     href: '/report',
-    text: 'Economic Report'
+    text: 'Báo cáo Kinh tế'
   },
   {
     icon: <MessageCircleIcon className='size-3.5' />,
     href: '/new',
-    text: 'New'
+    text: 'Tin Tức'
   },
 
   {
     icon: <UserCircleIcon className='size-3.5' />,
     href: '/about',
-    text: 'About'
+    text: 'Về Chúng Mình'
   },
   {
     icon: <MonitorIcon className='size-3.5' />,

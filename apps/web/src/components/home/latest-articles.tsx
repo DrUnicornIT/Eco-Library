@@ -55,7 +55,7 @@ const LatestArticles = (props: LatestArticlesProps) => {
           duration: 0.3
         }}
       >
-        Các Đề Tài Nghiên Cứu Nổi Bật
+        CÁC ĐỀ TÀI NGHIÊN CỨU NỔI BẬT
       </motion.h2>
       <motion.div
         className='mt-12 grid gap-4 md:grid-cols-2'

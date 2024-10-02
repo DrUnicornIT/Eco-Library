@@ -53,7 +53,7 @@ const UsesPage = () => {
     <>
       <PageTitle
         title='Album'
-        description='Album.'
+        description='Khoảnh khắc đẹp của ECO.'
       />
       <Mdx content={body} />
     </>

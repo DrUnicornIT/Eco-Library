@@ -47,7 +47,7 @@ const ResearchPage = () => {
   return (
     <>
       <PageTitle
-        title='Chuyên đề nghiên cứu'
+        title='Chuyên Đề'
         description={`Chìm vào dòng suy tư tại góc Chuyên Đề - nơi tập hợp những sản phẩm Nghiên cứu Khoa học có chiều sâu của các Economians.`}
       />
       <FilteredResearches posts={posts} />

@@ -45,8 +45,8 @@ const ProjectsPage = () => {
   return (
     <>
       <PageTitle
-        title='News'
-        description='The list of my news. Everything was made with ❤️.'
+        title='Tin Tức'
+        description='Lướt nhẹ trên những cơn sóng Tin Tức - nơi giúp bạn đón đầu những thông tin mới nhất của “đại dương” kinh tế thế giới hàng tuần.'
       />
       <ProjectCards projects={news} />
     </>
