@@ -96,11 +96,6 @@ const New = {
       required: true
     },
     {
-      name: 'homepage',
-      type: 'string',
-      required: false
-    },
-    {
       name: 'techstack',
       type: 'list',
       fields: [

@@ -50,7 +50,7 @@ const Header = (props: HeaderProps) => {
         </h1>
         <div className='grid grid-cols-2 text-sm max-md:gap-4 md:grid-cols-4'>
           <div className='space-y-1 md:mx-auto'>
-            <div className='text-muted-foreground'>Written by</div>
+            <div className='text-muted-foreground'>Posted by</div>
             <Link href='https://www.facebook.com/economiadav' className='flex items-center gap-2'>
               <BlurImage
                 src='/images/avatar.png'

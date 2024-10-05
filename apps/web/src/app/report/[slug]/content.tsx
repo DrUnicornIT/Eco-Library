@@ -19,7 +19,7 @@ const Content = async (props: ContentProps) => {
   return (
     <>
       <div className='mt-8 flex flex-col justify-between lg:flex-row'>
-        <article className='w-full lg:w-[670px]'>
+        <article className='w-full lg:w-[670px]' style={{ textAlign: 'justify' }}>
           <Mdx content={content} />
         </article>
         <aside className='lg:min-w-[270px] lg:max-w-[270px]'>

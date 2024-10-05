@@ -6,19 +6,19 @@ import { useEffect } from 'react'
 
 const TEXTS = [
   {
-    text: 'CLB Sinh viên Nghiên cứu',
+    text: 'CLB Sinh viên Nghiên cứu Kinh tế ',
     className: 'bg-clip-text text-transparent bg-gradient-to-r from-[#ff1835] to-[#ffc900]'
   },
   {
-    text: 'CLB Sinh viên Nghiên cứu',
+    text: 'CLB Sinh viên Nghiên cứu Kinh tế ',
     className: 'bg-clip-text text-transparent bg-gradient-to-r from-[#0077ff] to-[#00e7df]'
   },
   {
-    text: 'CLB Sinh viên Nghiên cứu',
+    text: 'CLB Sinh viên Nghiên cứu Kinh tế ',
     className: 'bg-clip-text text-transparent bg-gradient-to-r from-[#7f00de] to-[#ff007f]'
   },
   {
-    text: 'CLB Sinh viên Nghiên cứu',
+    text: 'CLB Sinh viên Nghiên cứu Kinh tế ',
     className: 'bg-clip-text text-transparent bg-gradient-to-r from-[#ff1835] to-[#ffc900]'
   }
 ]
@@ -71,7 +71,7 @@ const Hero = () => {
               </div>
             </div>{' '}
             <br></br>
-            Kinh tế Học viện Ngoại giao
+            Học viện Ngoại giao
           </h1>
           <div className='text-muted-foreground text-sm'>HaNoi/VietNam • UTC/GMT +7</div>
         </motion.div>

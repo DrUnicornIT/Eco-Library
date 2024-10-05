@@ -1,9 +1,5 @@
 'use client'
-
-import { buttonVariants, Link } from '@tszhong0411/ui'
-import { cn } from '@tszhong0411/utils'
 import { motion } from 'framer-motion'
-import { ArrowUpRightIcon } from 'lucide-react'
 import type { New } from 'mdx/generated'
 
 const animation = {
@@ -20,7 +16,7 @@ const animation = {
 type HeaderProps = New
 
 const Header = (props: HeaderProps) => {
-  const { name, description, homepage} = props
+  const { name, description} = props
 
   return (
     <div className='space-y-8 pt-10'>
@@ -33,19 +29,6 @@ const Header = (props: HeaderProps) => {
           <div className='text-2xl font-bold'>{name}</div>
           <div>{description}</div>
         </div>
-      </motion.div>
-      <motion.div
-        className='flex flex-col items-start gap-2 sm:flex-row sm:gap-4'
-        initial={animation.hide}
-        animate={animation.show}
-        transition={{ delay: 0.1 }}
-      >
-        {homepage ? (
-          <Link href={homepage} className={cn(buttonVariants(), 'group')}>
-            Visit Website
-            <ArrowUpRightIcon className='ml-2 size-5 transition-transform group-hover:-rotate-12' />
-          </Link>
-        ) : null}
       </motion.div>
     </div>
   )

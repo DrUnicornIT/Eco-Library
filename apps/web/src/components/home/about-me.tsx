@@ -9,7 +9,6 @@ import CodingHours from './coding-hours'
 import Connect from './connect'
 import FavoriteFramework from './favorite-framework'
 import LocationCard from './location-card'
-import StacksCard from './stacks-card'
 
 const variants = {
   initial: {
@@ -51,7 +50,7 @@ const AboutMe = () => {
           duration: 0.3
         }}
       >
-        Về chúng tôi
+        Về chúng mình
       </motion.h2>
       <motion.div
         className='mt-12 grid gap-4 md:grid-cols-2'
@@ -69,7 +68,10 @@ const AboutMe = () => {
       >
         <div className='grid gap-4'>
           <LocationCard />
-          <StacksCard />
+          <div className='grid gap-4 [@media(min-width:450px)]:grid-cols-2'>
+            <CodingHours />
+            <FavoriteFramework />
+          </div>
         </div>
         <div className='grid gap-4'>
           <Connect />

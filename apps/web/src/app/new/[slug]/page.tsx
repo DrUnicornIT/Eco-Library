@@ -97,7 +97,9 @@ const ProjectPage = (props: ProjectPageProps) => {
         className='my-12 rounded-lg'
         lazy={false}
       />
-      <Mdx content={body} />
+      <div style={{ textAlign: 'justify' }}>
+        <Mdx content={body} />
+      </div>
     </div>
   )
 }

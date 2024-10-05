@@ -1,9 +1,4 @@
-import {
-  type IconType,
-  SiFacebook,
-  SiGooglehome,
-  SiGmail,
-} from '@icons-pack/react-simple-icons'
+import { type IconType, SiFacebook, SiGmail, SiGooglehome } from '@icons-pack/react-simple-icons'
 import { MessageCircleIcon, MonitorIcon, PencilIcon, UserCircleIcon } from 'lucide-react'
 
 type HeaderLinks = Array<{
@@ -66,19 +61,19 @@ export const FOOTER_LINKS: FooterLinks = [
     links: [
       {
         href: '/',
-        text: 'Home'
+        text: 'Trang Chủ'
       },
       {
         href: '/research',
-        text: 'Research'
+        text: 'Chuyên Đề'
       },
       {
         href: '/project',
-        text: 'Project'
+        text: 'Dự Án'
       },
       {
         href: '/report',
-        text: 'Economic Report'
+        text: 'Báo cáo Kinh tế'
       }
     ]
   },
@@ -87,11 +82,11 @@ export const FOOTER_LINKS: FooterLinks = [
     links: [
       {
         href: '/new',
-        text: 'New'
+        text: 'Tin Tức'
       },
       {
         href: '/about',
-        text: 'About'
+        text: 'Về Chúng Mình'
       },
       {
         href: '/album',
@@ -130,17 +125,17 @@ export const SOCIAL_LINKS: SocialLinks = [
     icon: SiGmail
   },
   {
-    href: '0988358369',
+    href: 'tel:0988358369',
     title: 'Phone - Chủ Nhiệm Thùy Dương',
     icon: SiGooglehome
   },
   {
-    href: '0964060215',
+    href: 'tel:0964060215',
     title: 'Phone - Cố Vấn Ngọc Thơ',
     icon: SiGooglehome
   },
   {
-    href: '0829520797',
+    href: 'tel:0829520797',
     title: 'Phone - Cố Vấn Xuân Nhung',
     icon: SiGooglehome
   }

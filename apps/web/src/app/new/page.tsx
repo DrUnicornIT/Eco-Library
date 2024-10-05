@@ -4,8 +4,8 @@ import type { Metadata, ResolvingMetadata } from 'next'
 import PageTitle from '@/components/page-title'
 import ProjectCards from '@/components/project-cards'
 
-const title = 'New'
-const description = 'New.'
+const title = 'News'
+const description = 'News.'
 
 type ProjectsPageProps = {
   params: Record<string, never>
